@@ -75,11 +75,8 @@ WSGI_APPLICATION = 'GamerCrazeDatabase.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'cluster0',
-        'HOST': 'mongodb+srv://Admin:abcd1234@cluster0-bf3ui.mongodb.net/test?retryWrites=true&w=majority',
-        'USER': 'admin',
-        'PASSWORD': 'abcd1234',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
